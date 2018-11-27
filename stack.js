@@ -1,4 +1,5 @@
 /* Stacks! */
+// Stack is first in last out
 // functions: push, pop, peek, length
 // Real life uses: reverse a word, undo in editors, Back/Forward in browsers
 
