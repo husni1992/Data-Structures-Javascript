@@ -1,0 +1,40 @@
+<ul id="myList">
+</ul>
+
+<div id='log'></div>
+
+<script>
+    (function () {
+        var old = console.log;
+        var logger = document.getElementById('log');
+        console.log = function (message) {
+            old(message);
+            if (typeof message == 'object') {
+                logger.innerHTML += (JSON && JSON.stringify ? JSON.stringify(message) : message) + '<br />';
+            } else {
+                logger.innerHTML += message + '<br />';
+            }
+        }
+    })();
+
+    // unused: this accepts item as string
+    var display = function (item) {
+        var span = document.createElement("SPAN");
+        var bold = document.createElement('strong');
+
+        var codeNode = document.createTextNode(item);
+        var space = document.createTextNode(' : ');
+        var textnode = document.createTextNode(eval(item));
+
+        span.appendChild(codeNode);
+        span.appendChild(space);
+        bold.appendChild(textnode);
+
+        var node = document.createElement("LI");
+        node.appendChild(span);
+        node.appendChild(bold);
+        document.getElementById("myList").appendChild(node);
+    }
+</script>
+
+<script src="./stack.js"></script>
