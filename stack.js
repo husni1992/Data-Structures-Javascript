@@ -43,16 +43,5 @@ console.log(stck1.pop());
 console.log(stck1.size());
 console.log(stck1.peek());
 // display('stck1.size()');
-// display('stck1.peek()')
-// display('stck1.pop()');
-// display('stck1.size()');
-// display('stck1.peek()');
 
-// display('stck1.push("Husny", "Ahamed")');
-// display('stck1.size()');
-// display('stck1.peek()')
-// display('stck1.pop()');
-// display('stck1.size()');
-// display('stck1.peek()');
-
-// A simple usecase of stack is finding a word in is a palindrome (reads the same backwards)
+// A simple usecase of stack dataSctructure is finding a word is a palindrome (reads the same backwards)
