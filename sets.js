@@ -1,3 +1,7 @@
+/* Sets */
+// Sets are special type of arrays, where element cannot duplicate, values are not in order.
+// Uses: Check the presence of an item
+
 function Setz() {
     var collection = [];
 
